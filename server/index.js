@@ -35,7 +35,7 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-const DB = "mongodb+srv://obscure:obscure2001@cluster0.8lytsov.mongodb.net/obscureGaming?retryWrites=true&w=majority"
+const DB = process.env.MONGO;
 
 mongoose.connect(DB, {
     useNewUrlParser: true
