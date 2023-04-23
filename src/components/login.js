@@ -38,9 +38,10 @@ const Login = ({setLoginUser}) => {
 
     return (
         <div className="login">
-            <h1>Login</h1>
-            <input type="email" name="username" value={user.username}  placeholder="Enter your Email" required onChange={handleChange}/>
-            <input type="password" name="password" value={user.password}  placeholder="Enter your Password" required onChange={handleChange}/>
+            <h2>Username </h2>
+            <input type="email" name="username" value={user.email}  placeholder="Use- a@b.com" onChange={handleChange}/>
+            <h2>Password </h2>
+            <input type="password" name="password" value={user.password}  placeholder="Use- qwer" onChange={handleChange}/>
             <div className="button" onClick={login}>Login</div>
             <div>or</div>
             <div className="button" onClick={() => history("/register")}>Register</div>
